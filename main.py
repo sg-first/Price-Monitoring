@@ -21,8 +21,8 @@ def judge_ifnot_del():
     if len(manuallist) >= 1151:
         manuallist.pop(0)
 
-def sendemail(list,current_price):
-    sorted_list = list[:]
+def sendemail(price_list,current_price):
+    sorted_list = price_list[:]
     sorted_list.sort()
     percentnum = sorted_list[6]
     percent = 6 / len(sorted_list)*100
